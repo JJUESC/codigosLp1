@@ -1,0 +1,1 @@
+Calculadora que realiza operacoes basicas, sem considerer ordem de precedencia
