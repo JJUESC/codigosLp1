@@ -135,6 +135,15 @@ void orderInString(char word[][32], int wordAmmount) {
         }
     }
 }
+/**
+ * @brief Programa principal que demonstra ordenação e impressão de palavras.
+ *
+ * Lê uma linha de entrada, imprime as palavras,
+ * ordena os caracteres da string e ordena as palavras,
+ * depois imprime os resultados.
+ *
+ * @return 0 Em caso de sucesso.
+ */
 int main() {
     char input[1024];
     char temp [1024];
@@ -150,4 +159,5 @@ int main() {
     wordAmmount = storeWord(input, word);
     orderInString(word, wordAmmount);
     printFromWord(word, wordAmmount);
+    return 0;
 }

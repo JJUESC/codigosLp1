@@ -76,6 +76,14 @@ void printAsCross(char answers[][13], int wordSelect[][1], char wordList[][13]) 
         printf("\n");
     }
 }
+/**
+ * @brief Programa principal que simula a palavra cruzada.
+ *
+ * inicializa vetores bidimensionais de palavras e os utiliza
+ * para criar a palavra cruzada
+ *
+ * @return 0 Em caso de sucesso.
+ */
 int main() {
     srand(time(NULL));
     int wordSelect[10][1], input = 1;
@@ -224,4 +232,5 @@ int main() {
             answers[input - 1][strcspn(answers[input - 1], "\n")] = '\0';
         }
     }
+    return 0;
 }
