@@ -1,1 +1,2 @@
-Contem exemplos e atividades de Linguagem de Programacao 1
+Atividades: Contem atividades praticas de linguagem de programacao 1
+Exemplos: Contem exemplos de linguagem de programacao 1
