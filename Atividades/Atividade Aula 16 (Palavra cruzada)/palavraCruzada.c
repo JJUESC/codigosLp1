@@ -77,6 +77,36 @@ void printAsCross(char answers[][13], int wordSelect[][1], char wordList[][13]) 
     }
 }
 /**
+ * @brief Printa as dicas para palavras cruzadas.
+ * 
+ * Essa funcao utiliza o input do usuario os numeros selecionados
+ * aleatoriamente para imprimir as dicas correspondentes as palvras,
+ * que estao armazenadas nas "hintLists".
+ * 
+ * @param input Entrada do usuario
+ * @param wordSelect Numero aleatorio que escolhe a palavra
+ * @param hintList vetor de char que armazena dicas das palavras cruzadas
+ * 
+ */
+void printHint(int input, int wordSelect[][1], char hintList[][64], char hintList2[][64], char hintList3[][64], char hintList4[][64], char hintList5[][64]) {
+    if(wordSelect[input][0] > 63) {
+        printf("%s", hintList5[wordSelect[input][0] - 64]);
+        printf("\n");
+    } else if(wordSelect[input][0] > 47) {
+        printf("%s", hintList4[wordSelect[input][0] - 48]);
+        printf("\n");
+    } else if(wordSelect[input][0] > 31) {
+        printf("%s", hintList3[wordSelect[input][0] - 32]);
+        printf("\n");
+    } else if(wordSelect[input][0] > 15) {
+        printf("%s", hintList2[wordSelect[input][0] - 16]);
+        printf("\n");
+    } else {
+        printf("%s", hintList[wordSelect[input][0]]);
+        printf("\n");
+    }
+}
+/**
  * @brief Programa principal que simula a palavra cruzada.
  *
  * inicializa vetores bidimensionais de palavras e os utiliza
